@@ -7,7 +7,7 @@ var rupture = require('rupture');
 
 
 
-gulp.task('default', function() {
+gulp.task('styles', function() {
   return gulp.src('app/stylus/main.styl')
     .pipe(sourcemaps.init())
     .pipe(stylus({
@@ -27,3 +27,7 @@ gulp.task('watch', function(){
   gulp.watch('app/stylus/main.styl', ['default']);
   gulp.watch('app/tamplates/index.jade', ['templates']);
 });
+
+gulp.task('build', ['styles', 'templates']);
+
+gulp.task('default', ['build']);
