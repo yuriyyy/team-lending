@@ -10,10 +10,11 @@
   "license": "ISC",
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp-jade": "^1.1.0",
+    "gulp-livereload": "^3.8.1",
     "gulp-sourcemaps": "^1.6.0",
     "gulp-stylus": "^2.3.1",
     "install": "^0.6.1",
-    "jade": "^1.11.0",
     "nib": "^1.1.0",
     "npm": "^3.8.6",
     "rupture": "^0.6.1"
