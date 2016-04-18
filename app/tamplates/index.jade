@@ -5,10 +5,23 @@ html(lang="en")
     link(rel="stylesheet" href="main.css")
 
   body
-    h1 Jade - node template engine
-    #container.col
-      p You are amazing
-      p
-        |Jade is a terse and simple
-        |templating language with a
-        |strong focus on performance and powerful features.
+    //START HEADER by ...
+    header.header
+      .container
+      
+    //START HEADLINE by ...  
+    section.container.headline
+    
+    main.container.main
+      //START BREANDS by ...
+      section.main__item.brands
+      
+      //START ABOUT by ...
+      section.main__item.about
+      
+      //START FEADBACK by ...
+      section.main__item.feedback
+      
+    //START FOOTER by ...  
+    footer.footer
+      .container

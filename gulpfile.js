@@ -25,6 +25,8 @@ gulp.task('templates', function() {
 
 gulp.task('watch', function(){
   gulp.watch('app/stylus/main.styl', ['default']);
+  gulp.watch('app/stylus/elements/**/*.styl', ['default']);
+  gulp.watch('app/stylus/var/**/*.styl', ['default']);
   gulp.watch('app/tamplates/index.jade', ['templates']);
 });
 
