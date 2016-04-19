@@ -30,7 +30,6 @@ gulp.task('watch', function(){
   gulp.watch('app/tamplates/index.jade', ['templates']);
 });
 
-
 gulp.task('build', ['styles', 'templates']);
 
 gulp.task('default', ['build']);
