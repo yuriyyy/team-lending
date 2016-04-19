@@ -4,8 +4,16 @@ var sourcemaps = require('gulp-sourcemaps');
 var jade = require('gulp-jade');
 var nib = require('nib');
 var rupture = require('rupture');
+var browserSync = require('browser-sync');
 
-
+gulp.task('browser-sync', function() {
+    browserSync({
+        server: {
+            baseDir: './public/'
+        },
+        notify: false
+    });
+});
 
 gulp.task('styles', function() {
   return gulp.src('app/stylus/main.styl')
@@ -14,7 +22,10 @@ gulp.task('styles', function() {
       use: [nib(), rupture()]
     }))
     .pipe(sourcemaps.write('./'))
-    .pipe(gulp.dest('public'));
+    .pipe(gulp.dest('public'))
+    .pipe(browserSync.reload({
+        stream: true
+    }));
 });
 
 gulp.task('templates', function() {
@@ -23,13 +34,11 @@ gulp.task('templates', function() {
     .pipe(gulp.dest('public'));
 });
 
-gulp.task('watch', function(){
+gulp.task('watch', ['browser-sync', 'templates', 'styles'], function(){
   gulp.watch('app/stylus/main.styl', ['default']);
-  gulp.watch('app/stylus/elements/**/*.styl', ['default']);
-  gulp.watch('app/stylus/var/**/*.styl', ['default']);
   gulp.watch('app/tamplates/index.jade', ['templates']);
+  gulp.watch('./public/**/*.html', browserSync.reload);
 });
-
 
 gulp.task('build', ['styles', 'templates']);
 
