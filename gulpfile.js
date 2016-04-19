@@ -16,7 +16,7 @@ gulp.task('browser-sync', function() {
 });
 
 gulp.task('styles', function() {
-  return gulp.src('app/stylus/main.styl')
+  return gulp.src('app/stylus/**/*.styl')
     .pipe(sourcemaps.init())
     .pipe(stylus({
       use: [nib(), rupture()]
@@ -29,14 +29,14 @@ gulp.task('styles', function() {
 });
 
 gulp.task('templates', function() {
-  return gulp.src('app/tamplates/index.jade')
+  return gulp.src('app/tamplates/**/*.jade')
     .pipe(jade())
     .pipe(gulp.dest('public'));
 });
 
 gulp.task('watch', ['browser-sync', 'templates', 'styles'], function(){
-  gulp.watch('app/stylus/main.styl', ['default']);
-  gulp.watch('app/tamplates/index.jade', ['templates']);
+  gulp.watch('app/stylus/**/*.styl', ['default']);
+  gulp.watch('app/tamplates/**/*.', ['templates']);
   gulp.watch('./public/**/*.html', browserSync.reload);
 });
 
