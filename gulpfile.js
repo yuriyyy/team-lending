@@ -30,7 +30,9 @@ gulp.task('styles', function() {
 
 gulp.task('templates', function() {
   return gulp.src('app/tamplates/**/*.jade')
-    .pipe(jade())
+    .pipe(jade({
+      pretty: true
+    }))
     .pipe(gulp.dest('public'));
 });
 
