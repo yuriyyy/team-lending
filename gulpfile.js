@@ -36,7 +36,7 @@ gulp.task('templates', function() {
 
 gulp.task('watch', ['browser-sync', 'templates', 'styles'], function(){
   gulp.watch('app/stylus/**/*.styl', ['default']);
-  gulp.watch('app/tamplates/**/*.', ['templates']);
+  gulp.watch('app/tamplates/**/*.jade', ['templates']);
   gulp.watch('./public/**/*.html', browserSync.reload);
 });
 
