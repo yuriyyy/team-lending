@@ -4,6 +4,7 @@
     <list default="true" id="a381cdb2-4ac0-4820-ac60-3baaec8c35b5" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/stylus/elements/footer.styl" afterPath="$PROJECT_DIR$/app/stylus/elements/footer.styl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/stylus/main.styl" afterPath="$PROJECT_DIR$/app/stylus/main.styl" />
     </list>
     <ignored path="team-lending.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -86,8 +87,8 @@
     </gulpfiles>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="753" />
-    <option name="y" value="210" />
+    <option name="x" value="819" />
+    <option name="y" value="139" />
     <option name="width" value="606" />
     <option name="height" value="595" />
   </component>
@@ -247,7 +248,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="753" y="210" width="606" height="595" extended-state="0" />
+    <frame x="819" y="139" width="606" height="595" extended-state="1" />
     <editor active="false" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.028822055" sideWeight="0.50570965" order="2" side_tool="true" content_ui="tabs" />
@@ -409,8 +410,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/stylus/elements/footer.styl">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22309712">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.49081364">
+          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="17" />
           <folding />
         </state>
       </provider>
