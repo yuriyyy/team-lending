@@ -1,7 +1,33 @@
 .brands
-  //styles
-  height: 70px
-  background-color: yellow
-  display: flex
-  flex-flow: wrap row;
-  
+  height 90px
+  background-color yellow
+  display flex
+  flex-direction column
+  align-items stretch
+  p.brands__title
+    display flex
+    flex-direction row
+    align-items stretch
+    padding 7px 0
+    font-size 9pt
+  ul.brands__list
+    display flex
+    flex-direction row
+    justify-content space-around
+    font-size 10pt
+    height 60px
+    li.barnds__list--item
+      display flex
+      flex-direction nowrap column
+      justify-content space-between
+      align-items center
+      a.barnds__list--item__icon
+        display flex
+        width 40px
+        height 40px
+        border-radius 10px
+        border 2px solid #4E4E4E
+        background-color #fff
+      p.barnds__list--item__name
+        display flex
+        padding-left 5px
