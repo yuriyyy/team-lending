@@ -13,6 +13,7 @@ html(lang="en")
     //START HEADLINE by ...
     section.container.headline
       .headline_image
+        img(src="./images/Heroshot_big_image.png")
       .headline_desc
         .headline_header Striking Headline Here
         .headline_text
@@ -20,7 +21,8 @@ html(lang="en")
           | adipisicing elit, sed do eiusmod tempor incididunt ut labore et
           | dolore magna aliqua.
         #[a.button Main CTA Button]
-
+        .little_text
+          | Or, #[a(href="#") link] to an alternative option
     main.container.main
       //START BREANDS by ...
       section.main__item.brands
@@ -49,6 +51,27 @@ html(lang="en")
 
       //START FEADBACK by ...
       section.main__item.feedback
+        article.feedback__item
+          img.feedback__item--customer-photo(src="http://placehold.it/68x68")
+          p.feedback__item--customer-comment
+            |"The Product is awasome. I love it.
+            |Thanks UI Wireframes for everything you've put together."
+            span.feedback__item--customer-name
+              |- Customer Name
+        article.feedback__item
+          img.feedback__item--customer-photo(src="http://placehold.it/68x68")
+          p.feedback__item--customer-comment
+            |"The Product is awasome. I love it.
+            |Thanks UI Wireframes for everything you've put together."
+            span.feedback__item--customer-name
+              |- Customer Name
+        article.feedback__item
+          img.feedback__item--customer-photo(src="http://placehold.it/68x68")
+          p.feedback__item--customer-comment
+            |"The Product is awasome. I love it.
+            |Thanks UI Wireframes for everything you've put together."
+            span.feedback__item--customer-name
+              |- Customer Name
 
     //START FOOTER by ...
     footer.footer

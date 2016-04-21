@@ -28,13 +28,18 @@ gulp.task('styles', function() {
     }));
 });
 
+gulp.task('images', function() {
+  return gulp.src('app/img/*.*')
+    .pipe(gulp.dest('public/images'))
+});
+
 gulp.task('templates', function() {
   return gulp.src('app/tamplates/**/*.jade')
     .pipe(jade())
     .pipe(gulp.dest('public'));
 });
 
-gulp.task('watch', ['browser-sync', 'templates', 'styles'], function(){
+gulp.task('watch', ['browser-sync', 'templates', 'styles', 'images'], function(){
   gulp.watch('app/stylus/**/*.styl', ['default']);
   gulp.watch('app/tamplates/**/*.jade', ['templates']);
   gulp.watch('./public/**/*.html', browserSync.reload);
