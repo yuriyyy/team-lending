@@ -1,8 +1,36 @@
 @import "nib"
 
+//vars
+@import "var/colors"
+@import "var/variables"
+
+//elements
+@import "elements/header"
+@import "elements/headline"
+@import "elements/brands"
+@import "elements/about"
+@import "elements/feedback"
+@import "elements/footer"
+
 global-reset()
 
+
+
 body
-  background: green
-  +below(1200px)
-    background: red
+  display: flex
+  flex-direction: column
+  align-items: center
+  height: 100%
+  width: 100%
+  background-color: $primary
+  font-family: "Comic sans MS"
+  +below(800px)
+    background-color: $secondary
+
+.container
+  display: flex
+  width: 1050px
+
+.main
+  display: flex
+  flex-direction: column
