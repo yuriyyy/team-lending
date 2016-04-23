@@ -45,6 +45,6 @@ gulp.task('watch', ['browser-sync', 'templates', 'styles', 'images'], function()
   gulp.watch('./public/**/*.html', browserSync.reload);
 });
 
-gulp.task('build', ['styles', 'templates']);
+gulp.task('build', ['styles', 'templates', 'images']);
 
 gulp.task('default', ['build']);
