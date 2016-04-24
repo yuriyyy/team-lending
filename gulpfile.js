@@ -16,7 +16,7 @@ gulp.task('browser-sync', function() {
 });
 
 gulp.task('styles', function() {
-  return gulp.src('app/stylus/**/*.styl')
+  return gulp.src('app/styles/**/*.styl')
     .pipe(sourcemaps.init())
     .pipe(stylus({
       use: [nib(), rupture()]
@@ -30,7 +30,7 @@ gulp.task('styles', function() {
 
 gulp.task('images', function() {
   return gulp.src('app/img/*.*')
-    .pipe(gulp.dest('public/images'))
+    .pipe(gulp.dest('public/images'));
 });
 
 gulp.task('templates', function() {
@@ -40,7 +40,7 @@ gulp.task('templates', function() {
 });
 
 gulp.task('watch', ['browser-sync', 'templates', 'styles', 'images'], function(){
-  gulp.watch('app/stylus/**/*.styl', ['default']);
+  gulp.watch('app/styles/**/*.styl', ['default']);
   gulp.watch('app/tamplates/**/*.jade', ['templates']);
   gulp.watch('./public/**/*.html', browserSync.reload);
 });

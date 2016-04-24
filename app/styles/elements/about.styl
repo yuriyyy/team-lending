@@ -3,7 +3,9 @@
   background-color: transperent
   display: flex
   flex-direction: row
-  
+  border-bottom: 2px solid $dark
+  padding-bottom: 20px
+
 .what_is
   display: flex
   flex-direction: column
@@ -12,14 +14,17 @@
   font-size: 15px
   &__title
   	padding-top: 10px
-  	padding-bottom: 10px
+  	padding-bottom: 16px
   	font-size: 20px
-  &__text
-  	padding-bottom: 4px
-  h1
+  &__pretext
+    padding-bottom: 6px
   	font-size: 18px
-  
-  		
+  &__text
+    font-size: 15px
+  	padding-bottom: 4px
+
+
+
 .why_use
   flex: 1
   margin: 20px
@@ -37,11 +42,18 @@
   	background-color: darkgray
   	font-weight: bold
   	padding: 3px
-  	
+  &__item
+    padding: 0 0 5px 10px
+    &:before
+      content: "> "
+    &:first-child
+      padding-top: 5px
+
+
 .li
 &:before
   content: “>"
-  
+
   &__item
   	padding: 3px
-  	font-size: 14px		
+  	font-size: 14px
