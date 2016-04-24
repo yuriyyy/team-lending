@@ -1,4 +1,47 @@
 .about
   //styles
-  height: 70px
-  background-color: magenta
+  background-color: white
+  display: flex
+  flex-direction: row
+  
+.what_is
+  display: flex
+  flex-direction: column
+  flex: 2
+  padding: 20px
+  font-size: 15px
+  &__title
+  	padding-top: 10px
+  	padding-bottom: 10px
+  	font-size: 20px
+  &__text
+  	padding-bottom: 4px
+  h1
+  	font-size: 18px
+  
+  		
+.why_use
+  flex: 1
+  margin: 20px
+  background-color: #DDDDDD
+  border: 3px solid black
+  border-radius: 10px
+  padding: 30px
+  padding-top: 10px
+  &__title
+  	font-size: 20px
+  &__list
+  	list-style-type: none
+  	margin-top: 5px
+  	margin: 15px
+  	background-color: darkgray
+  	font-weight: bold
+  	padding: 3px
+  	
+.li
+&:before
+  content: “>"
+  
+  &__item
+  	padding: 3px
+  	font-size: 14px		
